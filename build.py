@@ -1,7 +1,7 @@
 """Builds the Scoop docs site.
 
 Each file in pages/ is one page: first line is the title, the rest is HTML.
-Run: python3 build.py   ->  writes site/
+Run: python3 build.py   ->  writes docs/ (served by GitHub Pages)
 """
 import pathlib, re, shutil
 
@@ -51,7 +51,7 @@ TEMPLATE = """<!doctype html>
 
 
 def main():
-    out = ROOT / 'site'
+    out = ROOT / 'docs'
     out.mkdir(exist_ok=True)
     shutil.copy(ROOT / 'style.css', out / 'style.css')
     for i, (slug, label) in enumerate(NAV):
