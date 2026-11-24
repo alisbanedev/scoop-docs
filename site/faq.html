@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FAQ · Scoop theme docs</title>
+<meta name="description" content="Quick answers to common questions.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="index.html">SCOOP <span>docs</span></a>
+  <button class="menu" aria-expanded="false" aria-controls="nav">Menu</button>
+</header>
+<div class="wrap">
+  <nav id="nav" class="nav" aria-label="Docs">
+    <ul><li><a href="index.html">Start here</a></li><li><a href="setup.html">Set up your store</a></li><li><a href="products.html">Add your products</a></li><li><a href="product-page.html">Product page</a></li><li><a href="sections.html">Sections</a></li><li><a href="settings.html">Theme settings</a></li><li><a href="faq.html" aria-current="page">FAQ</a></li><li><a href="support.html">Get help</a></li></ul>
+  </nav>
+  <main class="main">
+    <h1>FAQ</h1>
+    <p class="lead">Quick answers to common questions.</p>
+
+<details><summary>My products all show the same color.</summary>
+<p>Each product needs its own <strong>Accent color</strong> field. See <a href="products.html">Add your products</a>.</p></details>
+
+<details><summary>The browser tab or checkout shows the wrong store name.</summary>
+<p>Change it in <span class="path">Settings → General → Store name</span>. The theme can't change checkout.</p></details>
+
+<details><summary>Subscribe & save doesn't show.</summary>
+<p>It needs a subscription app, like Shopify Subscriptions, and the product must be added to a plan in that app.</p></details>
+
+<details><summary>Bundle tiers show "save 10%" but the cart has no discount.</summary>
+<p>The labels don't create discounts. Add automatic discounts with a minimum quantity in <span class="path">Discounts</span>. Make them match the labels.</p></details>
+
+<details><summary>Star ratings don't show.</summary>
+<p>Install a review app that fills Shopify's standard rating fields. Most popular review apps do.</p></details>
+
+<details><summary>How do I add an app's widget?</summary>
+<p>In the theme editor, click <span class="path">Add block</span> (product page) or <span class="path">Add section → Apps</span>. Your app's blocks are listed there.</p></details>
+
+<details><summary>Can I force dark mode?</summary>
+<p>Yes. <span class="path">Theme settings → Colors → Color scheme → Dark</span>.</p></details>
+
+<details><summary>Does Scoop support more than one language or currency?</summary>
+<p>Yes. Turn on the country and language selectors in the <span class="path">Header</span> or <span class="path">Footer</span>. Add languages and markets in Shopify settings first.</p></details>
+
+<details><summary>Will theme updates erase my changes?</summary>
+<p>No, as long as you change things in the theme editor. Code edits can be lost, so keep a copy of the theme before you update.</p></details>
+
+    <footer class="pager"><a class="prev" href="settings.html">← Theme settings</a><a class="next" href="support.html">Get help →</a></footer>
+  </main>
+</div>
+<script>
+  const b = document.querySelector('.menu'), n = document.getElementById('nav');
+  b.addEventListener('click', () => { const o = n.classList.toggle('open'); b.setAttribute('aria-expanded', o); });
+</script>
+</body>
+</html>

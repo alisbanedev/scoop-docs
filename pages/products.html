@@ -1,0 +1,39 @@
+Add your products
+<p class="lead">Scoop reads a few extra product fields called <strong>metafields</strong>. They give each product its color, flavor name and tagline.</p>
+
+<h2>Step 1: create the fields</h2>
+<p>Do this once. Go to <span class="path">Settings → Custom data → Products → Add definition</span>. Create each field below. Type the namespace and key exactly.</p>
+<div class="table-wrap">
+<table class="mf">
+  <thead><tr><th>Name</th><th>Namespace and key</th><th>Type</th><th>What it does</th></tr></thead>
+  <tbody>
+    <tr><td>Accent color</td><td><code>custom.accent_color</code></td><td>Color</td><td>The product's color. Used on cards, the product page and the cart.</td></tr>
+    <tr><td>Flavor</td><td><code>custom.flavor</code></td><td>Single line text</td><td>Short name, like "Black Cherry".</td></tr>
+    <tr><td>Tagline</td><td><code>custom.tagline</code></td><td>Single line text</td><td>One short line under the title.</td></tr>
+    <tr><td>Other flavors</td><td><code>custom.siblings</code></td><td>Product (list)</td><td>The products shown as flavor links.</td></tr>
+  </tbody>
+</table>
+</div>
+<div class="tip"><p><strong>One product, many flavors?</strong> Create the same Accent color field under <span class="path">Custom data → Variants</span>. Each flavor variant then gets its own color.</p></div>
+<div class="tip"><p>All fields are optional. Without an accent color, the product uses the highlight color from Theme settings.</p></div>
+
+<h2>Step 2: fill them in</h2>
+<ol>
+  <li>Open a product in <span class="path">Products</span>.</li>
+  <li>Scroll to <strong>Metafields</strong> at the bottom.</li>
+  <li>Pick a color, then type the flavor and tagline.</li>
+  <li>Save.</li>
+</ol>
+
+<h2>Product images</h2>
+<ul>
+  <li>Use PNG images with a <strong>transparent background</strong>. They sit on the colored background best.</li>
+  <li>Keep all products the same size and angle.</li>
+  <li>Videos and 3D models work too. Add them like normal media.</li>
+</ul>
+
+<h2>Color swatches</h2>
+<p>Want color dots instead of text buttons for options? Open the option in the product (like "Color"), link it to a category metafield, and set a color or image per value. Scoop shows them as swatches.</p>
+
+<h2>Star ratings</h2>
+<p>Install any review app that fills Shopify's standard rating fields (<code>reviews.rating</code>). The <strong>Star rating</strong> block then shows the stars.</p>

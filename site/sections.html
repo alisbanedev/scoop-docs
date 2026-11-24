@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sections · Scoop theme docs</title>
+<meta name="description" content="Sections are the big pieces of a page. In the theme editor, click Add section to add one, then drag to reorder.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="index.html">SCOOP <span>docs</span></a>
+  <button class="menu" aria-expanded="false" aria-controls="nav">Menu</button>
+</header>
+<div class="wrap">
+  <nav id="nav" class="nav" aria-label="Docs">
+    <ul><li><a href="index.html">Start here</a></li><li><a href="setup.html">Set up your store</a></li><li><a href="products.html">Add your products</a></li><li><a href="product-page.html">Product page</a></li><li><a href="sections.html" aria-current="page">Sections</a></li><li><a href="settings.html">Theme settings</a></li><li><a href="faq.html">FAQ</a></li><li><a href="support.html">Get help</a></li></ul>
+  </nav>
+  <main class="main">
+    <h1>Sections</h1>
+    <p class="lead">Sections are the big pieces of a page. In the theme editor, click <span class="path">Add section</span> to add one, then drag to reorder.</p>
+
+<h2>Top of the page</h2>
+<div class="card"><h3>Product showcase</h3><p>A big rotating hero. Add one block per product or flavor. The background takes each product's color.</p></div>
+<div class="card"><h3>Hero</h3><p>A simple hero with one image, a heading and a button.</p></div>
+<div class="card"><h3>Announcement bar</h3><p>A thin bar at the very top. It can show a free shipping progress message.</p></div>
+
+<h2>Products</h2>
+<div class="card"><h3>Product grid</h3><p>Colored product cards. You can add a dark promo card with tags and a button.</p></div>
+<div class="card"><h3>Featured collection</h3><p>Shows products from one collection, with an optional "View all" button.</p></div>
+<div class="card"><h3>Product recommendations</h3><p>"You may also like." Shopify picks related products for you.</p></div>
+
+<h2>Tell your story</h2>
+<div class="card"><h3>Bento</h3><p>A grid of stat cards (like "5g per scoop") and photo cards.</p></div>
+<div class="card"><h3>Listicle</h3><p>"5 reasons to try us." Each reason has an image, a heading and text.</p></div>
+<div class="card"><h3>Comparison</h3><p>You vs. the others, row by row.</p></div>
+<div class="card"><h3>Sticker stack</h3><p>A wide photo with colorful tag stickers on top.</p></div>
+<div class="card"><h3>FAQ</h3><p>Questions and answers. Shows a few first, with a "Show more" button.</p></div>
+
+<h2>Bottom of the page</h2>
+<div class="card"><h3>Closing CTA</h3><p>A final push to buy. Shows up to 3 products in a fan, with flavor links.</p></div>
+
+<h2>Utility</h2>
+<ul>
+  <li><strong>Contact form:</strong> a simple form that sends to your store email.</li>
+  <li><strong>Apps:</strong> a spot for app blocks.</li>
+  <li><strong>Custom Liquid:</strong> for code you or your developer add.</li>
+</ul>
+
+<div class="tip"><p><strong>Tip:</strong> most sections pick up the product color automatically. Use the "Accent color" setting only to override it.</p></div>
+
+    <footer class="pager"><a class="prev" href="product-page.html">← Product page</a><a class="next" href="settings.html">Theme settings →</a></footer>
+  </main>
+</div>
+<script>
+  const b = document.querySelector('.menu'), n = document.getElementById('nav');
+  b.addEventListener('click', () => { const o = n.classList.toggle('open'); b.setAttribute('aria-expanded', o); });
+</script>
+</body>
+</html>

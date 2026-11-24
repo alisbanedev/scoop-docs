@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Start here · Scoop theme docs</title>
+<meta name="description" content="Scoop is a bold Shopify theme for brands with a few hero products, like supplements, drinks and snacks. Each product gets its own color, and the whole page follows it.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="index.html">SCOOP <span>docs</span></a>
+  <button class="menu" aria-expanded="false" aria-controls="nav">Menu</button>
+</header>
+<div class="wrap">
+  <nav id="nav" class="nav" aria-label="Docs">
+    <ul><li><a href="index.html" aria-current="page">Start here</a></li><li><a href="setup.html">Set up your store</a></li><li><a href="products.html">Add your products</a></li><li><a href="product-page.html">Product page</a></li><li><a href="sections.html">Sections</a></li><li><a href="settings.html">Theme settings</a></li><li><a href="faq.html">FAQ</a></li><li><a href="support.html">Get help</a></li></ul>
+  </nav>
+  <main class="main">
+    <h1>Start here</h1>
+    <p class="lead">Scoop is a bold Shopify theme for brands with a few hero products, like supplements, drinks and snacks. Each product gets its own color, and the whole page follows it.</p>
+
+<h2>Get live in 5 steps</h2>
+<ol class="steps">
+  <li><strong>Add the theme.</strong> Shopify admin → Online Store → Themes → Add theme.</li>
+  <li><strong>Set your brand.</strong> Pick your colors, fonts and logo. <a href="setup.html">How →</a></li>
+  <li><strong>Give each product a color.</strong> This is what makes Scoop special. <a href="products.html">How →</a></li>
+  <li><strong>Build your home page.</strong> Add, remove and reorder sections. <a href="sections.html">How →</a></li>
+  <li><strong>Check your product page.</strong> Turn blocks on or off. <a href="product-page.html">How →</a></li>
+</ol>
+
+<h2>What's inside</h2>
+<div class="grid">
+  <a href="products.html"><strong>Flavor colors</strong><span>Each product has its own accent color.</span></a>
+  <a href="product-page.html"><strong>Subscribe & save</strong><span>Works with any subscription app.</span></a>
+  <a href="product-page.html"><strong>Bundle tiers</strong><span>"Buy 2, save 10%" style offers.</span></a>
+  <a href="product-page.html"><strong>Read the label</strong><span>A nutrition facts panel.</span></a>
+  <a href="settings.html"><strong>Light and dark</strong><span>Follows the shopper's device, or pick one.</span></a>
+  <a href="settings.html"><strong>Free shipping bar</strong><span>Shows how close the cart is.</span></a>
+</div>
+
+<div class="tip"><p>Stuck? Read the <a href="faq.html">FAQ</a> first, then <a href="support.html">contact us</a>.</p></div>
+
+    <footer class="pager"><a class="next" href="setup.html">Set up your store →</a></footer>
+  </main>
+</div>
+<script>
+  const b = document.querySelector('.menu'), n = document.getElementById('nav');
+  b.addEventListener('click', () => { const o = n.classList.toggle('open'); b.setAttribute('aria-expanded', o); });
+</script>
+</body>
+</html>
